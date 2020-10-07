@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name OLED)(type Legacy)(uri ${KIPRJMOD}/Libraries/OLED.lib)(options "")(descr ""))
+)
