@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name OLED)(type Legacy)(uri ${KIPRJMOD}/Libraries/OLED.lib)(options "")(descr ""))
+  (lib (name BMP-Arduino-rescue)(type Legacy)(uri ${KIPRJMOD}/BMP-Arduino-rescue.lib)(options "")(descr ""))
+)

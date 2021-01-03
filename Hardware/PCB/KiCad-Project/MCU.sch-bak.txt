@@ -787,23 +787,34 @@ F 4 "C15849" H 2650 2400 50  0001 C CNN "LCSC Part #"
 $EndComp
 Text GLabel 3900 4500 2    50   Input ~ 0
 A0
+$Comp
+L Device:D_Schottky_x2_KCom_AAK D2
+U 1 1 60067B68
+P 5800 1400
+F 0 "D2" H 5800 1617 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK" H 5800 1526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 1400 50  0001 C CNN
+F 3 "~" H 5800 1400 50  0001 C CNN
+	1    5800 1400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	5800 2000 5800 1600
 $Comp
 L power:+3V3 #PWR?
 U 1 1 6006F01B
-P 6000 800
+P 6100 1400
 AR Path="/6006F01B" Ref="#PWR?"  Part="1" 
 AR Path="/5F5A3CA7/6006F01B" Ref="#PWR?"  Part="1" 
 AR Path="/5F5ADEDD/6006F01B" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 6000 650 50  0001 C CNN
-F 1 "+3V3" H 6015 973 50  0000 C CNN
-F 2 "" H 6000 800 50  0001 C CNN
-F 3 "" H 6000 800 50  0001 C CNN
-	1    6000 800 
+F 0 "#PWR0118" H 6100 1250 50  0001 C CNN
+F 1 "+3V3" H 6115 1573 50  0000 C CNN
+F 2 "" H 6100 1400 50  0001 C CNN
+F 3 "" H 6100 1400 50  0001 C CNN
+	1    6100 1400
 	1    0    0    -1  
 $EndComp
-Text GLabel 5650 800  1    50   Input ~ 0
+Text GLabel 5500 1400 0    50   Input ~ 0
 VBAT
 Wire Wire Line
 	6100 1950 6700 1950
@@ -859,35 +870,4 @@ Wire Wire Line
 	6200 5050 6200 5000
 Text GLabel 4200 3800 2    50   Input ~ 0
 B2
-$Comp
-L Device:D_Schottky D?
-U 1 1 60025594
-P 5650 950
-F 0 "D?" H 5650 1167 50  0000 C CNN
-F 1 "D_Schottky" H 5650 1076 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323" H 5650 950 50  0001 C CNN
-F 3 "~" H 5650 950 50  0001 C CNN
-	1    5650 950 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Schottky D?
-U 1 1 6002559A
-P 6000 950
-F 0 "D?" H 6000 1167 50  0000 C CNN
-F 1 "D_Schottky" H 6000 1076 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323" H 6000 950 50  0001 C CNN
-F 3 "~" H 6000 950 50  0001 C CNN
-	1    6000 950 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5650 1100 5650 1600
-Wire Wire Line
-	5650 1600 5800 1600
-Wire Wire Line
-	6000 1100 6000 1600
-Wire Wire Line
-	6000 1600 5800 1600
-Connection ~ 5800 1600
 $EndSCHEMATC
